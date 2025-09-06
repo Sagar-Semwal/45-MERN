@@ -3,7 +3,9 @@ const quoteElement = document.querySelector("#quote");
 const authorElement = document.querySelector("#author");
 const newQuoteBtn = document.querySelector("#newquote");
 
-const API_KEY = "Vjz4AV4gO27Zn9uimyDgaQ==0NLJQ2wau8VDCADe";
+
+const API_KEY = process.env.API_KEY;
+
 const API_URL = "https://api.api-ninjas.com/v1/quotes";
 
 function getQuote() {
